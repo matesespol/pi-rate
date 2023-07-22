@@ -1,4 +1,8 @@
-<div class="container mx-auto flex h-full items-center justify-center">
+<script lang="ts">
+  import { LightSwitch } from "@skeletonlabs/skeleton";
+</script>
+
+<div class="container mx-auto grid h-full place-items-center">
   <div class="space-y-5">
     <h1 class="h1">Let's get cracking bones!</h1>
     <p>Start by exploring:</p>
@@ -15,5 +19,8 @@
         <code class="code">/src/routes/+page.svelte</code> - this page, you can replace the contents
       </li>
     </ul>
+    <div class="grid place-items-center">
+      <LightSwitch />
+    </div>
   </div>
 </div>
