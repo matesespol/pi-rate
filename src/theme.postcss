@@ -1,0 +1,143 @@
+:root {
+  /* =~= Theme Properties =~= */
+  --theme-font-family-base: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --theme-font-family-heading: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --theme-font-color-base: var(--color-surface-900);
+  --theme-font-color-dark: var(--color-primary-50);
+  --theme-rounded-base: 9999px;
+  --theme-rounded-container: 8px;
+  --theme-border-base: 2px;
+  /* =~= Theme On-X Colors =~= */
+  --on-primary: 0 0 0;
+  --on-secondary: 255 255 255;
+  --on-tertiary: 0 0 0;
+  --on-success: 0 0 0;
+  --on-warning: 0 0 0;
+  --on-error: 0 0 0;
+  --on-surface: 255 255 255;
+  /* =~= Theme Colors  =~= */
+  /* primary | #E83A40 */
+  --color-primary-50: 252 225 226; /* ⬅ #fce1e2 */
+  --color-primary-100: 250 216 217; /* ⬅ #fad8d9 */
+  --color-primary-200: 249 206 207; /* ⬅ #f9cecf */
+  --color-primary-300: 246 176 179; /* ⬅ #f6b0b3 */
+  --color-primary-400: 239 117 121; /* ⬅ #ef7579 */
+  --color-primary-500: 232 58 64; /* ⬅ #E83A40 */
+  --color-primary-600: 209 52 58; /* ⬅ #d1343a */
+  --color-primary-700: 174 44 48; /* ⬅ #ae2c30 */
+  --color-primary-800: 139 35 38; /* ⬅ #8b2326 */
+  --color-primary-900: 114 28 31; /* ⬅ #721c1f */
+  /* secondary | #103DC7 */
+  --color-secondary-50: 219 226 247; /* ⬅ #dbe2f7 */
+  --color-secondary-100: 207 216 244; /* ⬅ #cfd8f4 */
+  --color-secondary-200: 195 207 241; /* ⬅ #c3cff1 */
+  --color-secondary-300: 159 177 233; /* ⬅ #9fb1e9 */
+  --color-secondary-400: 88 119 216; /* ⬅ #5877d8 */
+  --color-secondary-500: 16 61 199; /* ⬅ #103DC7 */
+  --color-secondary-600: 14 55 179; /* ⬅ #0e37b3 */
+  --color-secondary-700: 12 46 149; /* ⬅ #0c2e95 */
+  --color-secondary-800: 10 37 119; /* ⬅ #0a2577 */
+  --color-secondary-900: 8 30 98; /* ⬅ #081e62 */
+  /* tertiary | #2d82b1 */
+  --color-tertiary-50: 224 236 243; /* ⬅ #e0ecf3 */
+  --color-tertiary-100: 213 230 239; /* ⬅ #d5e6ef */
+  --color-tertiary-200: 203 224 236; /* ⬅ #cbe0ec */
+  --color-tertiary-300: 171 205 224; /* ⬅ #abcde0 */
+  --color-tertiary-400: 108 168 200; /* ⬅ #6ca8c8 */
+  --color-tertiary-500: 45 130 177; /* ⬅ #2d82b1 */
+  --color-tertiary-600: 41 117 159; /* ⬅ #29759f */
+  --color-tertiary-700: 34 98 133; /* ⬅ #226285 */
+  --color-tertiary-800: 27 78 106; /* ⬅ #1b4e6a */
+  --color-tertiary-900: 22 64 87; /* ⬅ #164057 */
+  /* success | #76d58e */
+  --color-success-50: 234 249 238; /* ⬅ #eaf9ee */
+  --color-success-100: 228 247 232; /* ⬅ #e4f7e8 */
+  --color-success-200: 221 245 227; /* ⬅ #ddf5e3 */
+  --color-success-300: 200 238 210; /* ⬅ #c8eed2 */
+  --color-success-400: 159 226 176; /* ⬅ #9fe2b0 */
+  --color-success-500: 118 213 142; /* ⬅ #76d58e */
+  --color-success-600: 106 192 128; /* ⬅ #6ac080 */
+  --color-success-700: 89 160 107; /* ⬅ #59a06b */
+  --color-success-800: 71 128 85; /* ⬅ #478055 */
+  --color-success-900: 58 104 70; /* ⬅ #3a6846 */
+  /* warning | #FB8B26 */
+  --color-warning-50: 254 238 222; /* ⬅ #feeede */
+  --color-warning-100: 254 232 212; /* ⬅ #fee8d4 */
+  --color-warning-200: 254 226 201; /* ⬅ #fee2c9 */
+  --color-warning-300: 253 209 168; /* ⬅ #fdd1a8 */
+  --color-warning-400: 252 174 103; /* ⬅ #fcae67 */
+  --color-warning-500: 251 139 38; /* ⬅ #FB8B26 */
+  --color-warning-600: 226 125 34; /* ⬅ #e27d22 */
+  --color-warning-700: 188 104 29; /* ⬅ #bc681d */
+  --color-warning-800: 151 83 23; /* ⬅ #975317 */
+  --color-warning-900: 123 68 19; /* ⬅ #7b4413 */
+  /* error | #ec6f71 */
+  --color-error-50: 252 233 234; /* ⬅ #fce9ea */
+  --color-error-100: 251 226 227; /* ⬅ #fbe2e3 */
+  --color-error-200: 250 219 220; /* ⬅ #fadbdc */
+  --color-error-300: 247 197 198; /* ⬅ #f7c5c6 */
+  --color-error-400: 242 154 156; /* ⬅ #f29a9c */
+  --color-error-500: 236 111 113; /* ⬅ #ec6f71 */
+  --color-error-600: 212 100 102; /* ⬅ #d46466 */
+  --color-error-700: 177 83 85; /* ⬅ #b15355 */
+  --color-error-800: 142 67 68; /* ⬅ #8e4344 */
+  --color-error-900: 116 54 55; /* ⬅ #743637 */
+  /* surface | #344D99 */
+  --color-surface-50: 225 228 240; /* ⬅ #e1e4f0 */
+  --color-surface-100: 214 219 235; /* ⬅ #d6dbeb */
+  --color-surface-200: 204 211 230; /* ⬅ #ccd3e6 */
+  --color-surface-300: 174 184 214; /* ⬅ #aeb8d6 */
+  --color-surface-400: 113 130 184; /* ⬅ #7182b8 */
+  --color-surface-500: 52 77 153; /* ⬅ #344D99 */
+  --color-surface-600: 47 69 138; /* ⬅ #2f458a */
+  --color-surface-700: 39 58 115; /* ⬅ #273a73 */
+  --color-surface-800: 31 46 92; /* ⬅ #1f2e5c */
+  --color-surface-900: 25 38 75; /* ⬅ #19264b */
+}
+
+[data-theme="mates-extra"] h1,
+[data-theme="mates-extra"] h2,
+[data-theme="mates-extra"] h3,
+[data-theme="mates-extra"] h4,
+[data-theme="mates-extra"] h5,
+[data-theme="mates-extra"] h6,
+[data-theme="mates-extra"] a,
+[data-theme="mates-extra"] button {
+  font-weight: bold;
+}
+
+/* Applied to body with `<body data-theme="mates-extra">` */
+/* Created with: https://csshero.org/mesher/ */
+[data-theme="mates-extra"] {
+  /* prettier-ignore */
+  background-image:
+    /* secondary */
+    radial-gradient(at 76% 0%, hsla(225, 85%, 42%, 0.36) 0px, transparent 50%),
+    /* primary */
+    radial-gradient(at 1% 0%, hsla(358, 79%, 57%, 0.26) 0px, transparent 50%),
+    /* surface */
+    radial-gradient(at 20% 100%, hsla(225, 49%, 40%, 0.47) 0px, transparent 50%);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+background-image: .dark [data-theme= "modern"] {
+  /* prettier-ignore */
+  background-image:
+    /* secondary */
+    radial-gradient(at 76% 0%, hsla(225, 85%, 42%, 0.20) 0px, transparent 50%),
+    /* primary */
+    radial-gradient(at 1% 0%, hsla(358, 79%, 57%, 0.15) 0px, transparent 50%),
+    /* surface */
+    radial-gradient(at 20% 100%, hsla(225, 49%, 40%, 0.30) 0px, transparent 50%);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
